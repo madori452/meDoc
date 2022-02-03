@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="https://www.medoc.co.uk/images/shop_medoc/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.medoc.co.uk/images/shop_medoc/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="./_css/site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.medoc.co.uk/images/shop_medoc/css/owl.carousel.css">
+    <link rel="stylesheet" href="https://www.medoc.co.uk/images/shop_medoc/css/owl.theme.css">
+    <link rel="stylesheet" href="https://www.medoc.co.uk/images/shop_medoc/css/owl.transitions.css">
+
+    <script src="./_js/jquery-3.2.1.min.js"></script>
+    <script src="./_js/bootstrap.min.js"></script>
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /*background: #FFCCE5;*/
+            /*background:linear-gradient(90deg,#DA7575 ,#FFCCE5);*/
+            background: linear-gradient(90deg,#EE8888,#f1f1f1);
+            text-align: center;
+            padding: 5px 0 0;
+            z-index: 9;
+        }
+
+        .headerLogo {
+            display: inline-flex;
+            margin: 5px auto;
+        }
+
+        div[class|="col"] {
+            background-color: #FFFFFF;
+            border: 0.5px solid whitesmoke;
+        }
+
+        .imageCenter {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imageRight {
+            display: block;
+            margin-left: auto;
+            margin-right: 50px;
+        }
+
+        h1 {
+        }
+
+        .right-decoration_MY {
+            position: absolute;
+            right: 0%;
+            top: 0px;
+            width: 3px;
+            height: 45px;
+            background: #DA7575;
+        }
+
+            .right-decoration_MY:before {
+                content: "";
+                background: #DA7575;
+                width: 80px;
+                position: absolute;
+                top: 0;
+                height: 3px;
+                right: 0;
+            }
+
+        .left-decoration_MY {
+            position: absolute;
+            left: 0%;
+            top: 0px;
+            width: 3px;
+            height: 45px;
+            background: #DA7575;
+        }
+
+            .left-decoration_MY:after {
+                content: "";
+                background: #DA7575;
+                width: 80px;
+                position: absolute;
+                top: 0;
+                height: 3px;
+            }
+
+        .icon-wrapper_MY.circle-decoration_MY {
+            border: 1px solid #DA7575;
+            height: 100px;
+            border-radius: 100%;
+            width: 100px;
+            display: inline-flex;
+            text-align: center;
+            position: relative;
+            left: 5px;
+        }
+
+        .short-line_MY {
+            border-bottom: 2px solid #DA7575;
+            width: 45%;
+            display: inherit;
+            margin: 15px auto;
+        }
+
+        .link_MY {
+            position: relative;
+        }
+
+            .link_MY:after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 4px;
+                display: block;
+                right: 0;
+                background: #f1f1f1;
+                transition: width 2s ease;
+                -webkit-transition: width 2s ease;
+            }
+
+            .link_MY:hover:after {
+                width: 100%;
+                left: 0;
+                background: #DA7575;
+            }
+    </style>
+    <script>
+        function loading() {
+
+        }
+        function showFocus2222(myself) {
+            document.getElementById("focusImage").src = myself.currentSrc;
+            document.getElementById("myFocus").style.display = "block";
+        }
+        function hideFocus() {
+            document.getElementById("myFocus").style.display = "none";
+        }
+    </script>
+</head>
+<body onload="loading()" style="background-color:whitesmoke">
+    <div class="header">
+        <div class="headerLogo">
+            <a href="./main.html">
+             <img src="https://www.medoc.co.uk/images/shop_medoc/logo-black.png" />
+             </a>
+            <h7 style="display:inline-block;color:#606060;font-weight:bolder;margin-left:10px;font-size: 32px">密</h7>
+            <h7 style="display:inline-block;color:#606060;margin-top:8px;margin-left:5px;font-size: 25px">大可 </h7>
+            <h7 style="display:inline-block;color:#606060;margin-top:18px;margin-left:5px;font-size: 15px">資訊整合服務有限公司</h7>
+         
+                <h6 class="h6-14" style="color:dimgray;margin-top:20px;margin-left:150px">
+                    <a href="./contact.html" class="link_MY " style="color:#606060">聯絡我們</a>
+                </h6>
+        </div>
+
+    </div>
+
+    <div class="backChange" style="margin-top:120px;height:450px">
+        <form name="survey" method="post">
+           <p>
+                <label>聯絡人稱呼</label>
+                <input name="contactname" type="text" value="" size="40" />
+            </p>
+            <p>
+                <label>Email</label>
+                <input name="email" type="text" value="" size="40" />
+            </p>
+
+            <p>
+                <label>手機號碼</label>
+                <input name="telephoneno" type="text" value="" size="40" />
+            </p>
+
+            <p>
+                <label style="vertical-align:top;margin-top:10px; ">我想詢問關於</label>
+                <textarea name="iaminterestedin" cols="40" rows="3" class="text_input"></textarea>
+            </p>
+
+            <p style="text-align:center;">
+                <input type="submit" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" value="送給密大可" />
+                <input type="hidden" name="site" value="shop_medoc" />
+                <input type="hidden" name="state" value="survey" />
+                <input type="hidden" name="action" value="confirm" />
+                <input type="hidden" name="answer_set_id" value="8279473" />
+                <input type="hidden" name="survey_id" value="9" />
+            </p>
+
+        </form>
+
+    </div>
+
+    <div class="area-tail" style="background:linear-gradient(90deg,whitesmoke ,lightgray)">
+        <div class="row" style="border:hidden">
+            <div class="col-md-6  col-sm-6 col-xs-6 " style="background-color:transparent;border:0px">
+                <div style="float:left;">
+                    <img src="https://www.medoc.co.uk/images/shop_medoc/logo-black.png" />
+                </div>
+                <div style="float:left;margin-left: 13px;margin-top: 18px">
+                    <p style="color:dimgrey;text-align:left">
+                        縝密方可承大;&nbsp;承大方可成大
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6  col-sm-6 col-xs-6 " style="background-color:transparent;border:0px">
+
+                <div>
+                    <p style="color:dimgrey;text-align:right;margin-top:20px">地址:&nbsp;&nbsp;新北市永和區文化路&nbsp;135&nbsp;巷&nbsp;26&nbsp;弄&nbsp;2&nbsp;號&nbsp;1F</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
