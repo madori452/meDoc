@@ -1,23 +1,23 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 @font-face {font-family: "magictoolbox-thin"; font-weight: normal; font-style: normal; src:url("../fonts/magictoolbox-thin.eot"); src:url("../fonts/magictoolbox-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/magictoolbox-thin.woff") format("woff"), url("../fonts/magictoolbox-thin.ttf") format("truetype"), url("../fonts/magictoolbox-thin.svg#magictoolbox-thin") format("svg");}
 @font-face {font-family: "FontAwesome"; font-style: normal; font-weight: normal; src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");}
 
 @font-face {
     font-family: 'SquareSlab711LtBTLight';
-    src: url('../fonts/sqrs711l.eot');
+    /*src: url('../fonts/sqrs711l.eot');
     src: url('../fonts/sqrs711l.eot') format('embedded-opentype'),
          url('../fonts/sqrs711l.woff') format('woff'),
          url('../fonts/sqrs711l.ttf') format('truetype'),
-         url('../fonts/sqrs711l.svg#SquareSlab711LtBTLight') format('svg');
+         url('../fonts/sqrs711l.svg#SquareSlab711LtBTLight') format('svg');*/
 }
 @font-face {
     font-family: 'myriad-pro-semi-condensed';
-    src: url('../fonts/myriad-pro-semi-condensed.eot');
+    /*src: url('../fonts/myriad-pro-semi-condensed.eot');
     src: url('../fonts/myriad-pro-semi-condensed.eot') format('embedded-opentype'),
          url('../fonts/myriad-pro-semi-condensed.woff2') format('woff2'),
          url('../fonts/myriad-pro-semi-condensed.woff') format('woff'),
          url('../fonts/myriad-pro-semi-condensed.ttf') format('truetype'),
-         url('../fonts/myriad-pro-semi-condensed.svg#myriad-pro-semi-condensed') format('svg');
+         url('../fonts/myriad-pro-semi-condensed.svg#myriad-pro-semi-condensed') format('svg');*/
 }
 body, html {
   height: 100%;
@@ -250,8 +250,8 @@ p {color:#a0a0a0;
 }
 
 /* area - 2 What we do */
-.area-2 {color: #777;background-color:white;text-align:center;padding:50px 80px;height:470px;}
-.area-tail {color: #777;background-color:white;text-align:center;padding:25px 80px;height:470px;}
+.area-2 {color: #777;background-color:white;text-align:center;padding:50px 80px;height:75%;}
+.area-tail {color: #777;background-color:white;text-align:center;padding:0px 10px;}
 .short-line {
 	border-bottom: 2px solid #70f200;
 	width: 45%;
